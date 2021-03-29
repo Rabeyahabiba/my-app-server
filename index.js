@@ -11,6 +11,9 @@ const app = express()
 app.use(bodyParser.json());
 app.use(cors());
 const port = 5000;
+app.get('/', (req,res) => {
+    res.send("Working")
+})
 // console.log(process.env.DB_USER)
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
